@@ -32,12 +32,5 @@ angular.module('todoListApp')
         dataService.saveTodos(filteredTodos);
     };
 
-    $scope.predicate = 'name';
-    $scope.reverse = true;
 
-    //changes sort order
-    $scope.order = function(predicate) {
-        $scope.reverse = ($scope.predicate === predicate) ? !$scope.reverse : false;
-        $scope.predicate = predicate;
-    };
 })
